@@ -1,0 +1,256 @@
+  .h21{
+        font-size: xx-large;
+           text-align: right;
+         padding: 20px;
+     }
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+     .a0{
+        padding: 10px;
+        text-decoration: none;
+        font-size: large;
+        color:white;
+        color: darkmagenta;
+     }
+     .a0:active{
+        color: black;
+        text-decoration: underline;
+     }
+     .a0:hover{
+        color: black;
+        text-decoration: underline;
+     }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  background: #fdfcfa;
+}
+
+/* Buttons */
+.btn, .view-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn:hover, .view-btn:hover {
+  background-color: #444;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-illustration.jpg') no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 10rem 2rem;
+  background-color: rgb(255,153,64);
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Collections Grid */
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+.collection-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.collection-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Spotlight */
+.spotlight {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f6f3ef;
+  padding: 4rem 2rem;
+}
+.spotlight img {
+  flex: 1;
+  max-width: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+.spotlight-text {
+  flex: 1;
+  padding: 2rem;
+}
+.spotlight blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+/* Sketchbook */
+.sketchbook {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+.sketch-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.sketch-gallery img {
+  width: 150px;
+  border-radius: 6px;
+}
+  .right-button {
+      position: fixed;
+      right: 20px; 
+      top: 31%;  
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      background-color:  green;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+/* Footer */
+.footer {
+  background-color: rgb(64,145,201);
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+.newsletter-form {
+  margin: 1rem 0;
+}
+.newsletter-form input {
+  padding: 0.5rem;
+  width: 200px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+.newsletter-form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #fff;
+  color: #000;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.social-links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+.h22{
+   color: black;
+}
+.p100{
+   color: black;
+}
+  button{
+    border: 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    color: white;
+    background-color: rgb(51, 170, 38);
+    text-decoration: none;
+}
+button:hover{
+    border: 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    color: white;
+    background-color: rgb(49, 209, 49);
+    text-decoration: none;
+}
+.btn100{
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+  background-color: rgb(255,153,64);
+}
+.column23{
+      float: left;
+      width: 50%;
+     }
+     .row::after23{
+      display: table;
+      clear: both;
+     }
+     .column100{
+      float: left;
+      width: 50%;
+     }
+     .row::after100{
+      display: table;
+      clear: both;
+     }
+      .div00{
+      background-color: #d9a5b3;
+     }
+
+
+
+     /* Phones */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Laptops & Desktops */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  flex: 1 1 300px; /* grows/shrinks, min width 300px */
+}

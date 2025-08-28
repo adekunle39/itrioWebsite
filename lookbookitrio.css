@@ -1,0 +1,208 @@
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     .h21{
+        font-size: xx-large;
+         text-align: right;
+         padding: 0px;
+     }
+     .a0{
+        padding: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-size: large;
+        color: darkmagenta;
+     }
+     .input{
+      height: 160px;
+      border-radius: 20px;
+      font-size: larger;
+     }
+      .column100{
+      float: left;
+      width: 50%;
+     }
+     .row::after100{
+      display: table;
+      clear: both;
+     }
+      .column33{
+      float: left;
+      width: 50%;
+     }
+     .row::after33{
+      display: table;
+      clear: both;
+     }
+        * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+     .div00{
+      background-color: #d9a5b3;
+      width: 100%;
+     }
+     .a0:active{
+        color: black;
+        text-decoration: underline;
+     }
+     .a0:hover{
+        color: black;
+        text-decoration: underline;
+     }
+     .column{
+        float: left;
+        width: 50%;
+     }
+     .row::after{
+        clear: both;
+        display: table;
+     }
+     
+      button{
+    border: 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+}
+button:hover{
+    border: 0px;
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    color: white;
+    background-color: rgb(49, 209, 49);
+    text-decoration: none;
+}
+   .button{
+    border: 0px;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: rgb(35, 215, 35);
+    text-decoration: none;
+}
+.button:hover{
+    border: 0px;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: rgb(35, 249, 35);
+    text-decoration: none;
+}
+.btn100{
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+}
+.btn1000{
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    
+}
+  .right-button {
+      position: fixed;
+      right: 20px; 
+      top: 31%;  
+      transform: translateY(-50%);
+      padding: 10px 20px;
+      background-color:  green;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    
+    .social-buttons a {
+      margin-right: 10px;
+      text-decoration: none;
+      padding: 10px 20px;
+     
+      color: white;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .btn10{
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+  /* Phones */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Laptops & Desktops */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  flex: 1 1 300px; /* grows/shrinks, min width 300px */
+}
+
+.voices {
+    font-size: 1.0rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 25s steps(25, end) forwards, blink 2s step-end infinite;
+  }
+
+  /* Typewriter effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+  /* Color change effect */
+  .voices span {
+    animation: colorShift 8s infinite;
+    display: inline-block;
+  }
+
+  @keyframes colorShift {
+    0% { color: crimson; }
+    25% { color: gold; }
+    50% { color: royalblue; }
+    75% { color: seagreen; }
+    100% { color: crimson; }
+  }

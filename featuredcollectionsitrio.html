@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Collections | I-trio Concepts</title>
+     <link rel="stylesheet" href="featuredcollectionsitrio.css">
+</head>
+<body>
+    <header>
+      <div class="div00">
+      <div class="row100">
+        <div class="column100">
+            <img src="c:\Users\adewo\OneDrive\Desktop\imagesitrioweb\a_well_designed_lo_image (1).jpeg" alt="" style="width: 200px; border-radius: 20px;" height="120px">
+        </div>
+        <div class="column100">
+        <h1 class="h21">I-TRIO CONCEPTS</h1>
+        </div><br><br>
+      </div><br><br><br><br><br>
+       <b>  <a href="herosectionitrio.html" class="a0" target="_blank">Hero Section</a>
+         <a href="lookbookitrio.html" class="a0" target="_blank">Lookbook</a>
+        <a href="featuredcollectionsitrio.html" class="a0" target="_blank">Featured Collections</a>
+        <a href="aboutitrio.html" class="a0" target="_blank">About us</a>
+        </b>
+      </div><br>
+         <div class="buttons1">
+            <button class="right-button">
+        <a href="https://wa.me/2348057407202?text=Hello%20there!"  class="btn100" target="_blank">Order Now</a>
+            </button>
+         </div>
+    </header>
+    <main>
+        <header class="hero">
+    <div class="hero-content">
+      <h1 class="h22">Step Into the Season with Yetunde Adewole</h1>
+      <p class="p100">Curated collections illustrated with heart and handcrafted inspiration.</p>
+      <a href="lookbookitrio.html" class="btn" target="_blank">Explore Collections</a>
+    </div>
+  </header>
+
+  <!-- Collections Grid -->
+ 
+  <!-- Spotlight Feature -->
+  <section class="spotlight">
+    <img src="c:\Users\adewo\Downloads\tailor.png" alt="Atelier Lumière Illustration"/ style="width: 200px;" height="450px">
+    <div class="spotlight-text"><br><br><br><br>
+        <cite>Adewole Yetunde-Creative Director</cite>
+     
+      <blockquote>
+       <h2>Designers Spotlight</h2>
+      <p>
+         <p class="p0">
+                 I started my fashion career in 2007.I learnt it for 3 months.After completion in the same <br> year, 
+            I started sewing in my fathers sitting room, and was working as a stylist with a sister of mine.I went 
+            back for my degree, and I started sewing for my mates at school.
+        </p>
+        <p class="p0">
+                 So whenever I'm on semester break, I am at my business.The journey wasn't easy but the struggle continued. <br>
+            I started with a machine, later,  had one apprentice, which led me to move to an office apartment in 2009 and since then being building myself.
+        </p>
+        <p class="p0">
+                 I started with ankara sewing and then was challenged into sewing all types of female ready-to-wear clothing. <br>
+        </p>
+      </p><br>
+      </blockquote>
+     
+    </div>
+  </section>
+
+  <!-- Designer Sketchbook Preview -->
+  <section class="sketchbook">
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Be first to see new designs, stories & seasonal drops.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" id="emailInput" name="myInput">
+       <button type="submit">
+  <a 
+  id="emailLink" 
+  href="mailto:iniikeife@gmail.com?subject=Hello" 
+  style="color: black; text-decoration: none; font-size: large;" 
+  target="_blank">
+  Send a mail
+</a>
+
+      </button>
+</form>
+    <div class="social-links">
+      <a href="https://wa.me/2348057407202?text=Hello%20there!" class="a1" style="color: white;" text-decoration="none"  target="_blank">
+      <img src="c:\Users\adewo\Downloads\whatsapplogo.jpg" style="width: 30px;" height="30px" alt="">
+    </a>
+      <a onclick="window.open('https://www.instagram.com/i_square_concept', '_blank')" target="_blank">
+        <img src="c:\Users\adewo\Downloads\instagramlogo.jpg" alt=""  style="width: 30px;" height="30px">
+      </a>
+       <a onclick="window.open('https://www.tiktok.com/@itrios6', '_blank')" target="_blank">
+        <img src="c:\Users\adewo\Downloads\tiktoklogo.png" alt=""  style="width: 30px;" height="30px">
+        <a><br><br>
+    </div>
+  </footer>
+    </main><br><br><br>
+    <footer>
+         <div class="buttons1">
+            <button>
+        <a href="https://wa.me/2348057407202?text=Hello%20there!"  class="btn100" target="_blank">Order Now</a>
+            </button>
+      </div>
+    </footer>
+    <script>
+   const emailInput = document.getElementById('emailInput');
+    const emailLink = document.getElementById('emailLink');
+
+    emailInput.addEventListener('input', () => {
+      const email = emailInput.value.trim();
+      const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      if (isValidEmail) {
+        emailLink.href =  `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;;
+        emailLink.style.pointerEvents = 'auto';
+        emailLink.style.color = 'blue'; // Make it look clickable
+      } else {
+        emailLink.href = '#';
+        emailLink.style.pointerEvents = 'none';
+        emailLink.style.color = 'gray'; // Visually disabled
+      }
+    });
+  </script>
+</body>
+</html>
